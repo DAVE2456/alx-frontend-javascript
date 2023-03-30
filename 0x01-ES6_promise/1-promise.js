@@ -5,10 +5,10 @@ export default function (boolean) {
       body: 'Success',
     };
 
-    if (boolean === true ) {
+    if (boolean === true) {
       resolve(object);
     } else {
-      reject(Error('The fake API is note working currently'));
+      reject(Error('The fake API is not working currently'));
    }
  });
 }
