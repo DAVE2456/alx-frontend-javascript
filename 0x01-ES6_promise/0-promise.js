@@ -1,10 +1,10 @@
 function getResponseFromAPI() {
   return new promise((resolve, reject) => {
-     if (true) {
-       resolve();
-     } else {
-       reject();
-     }
+      if (true) {
+        resolve();
+      } else {
+        reject();
+      }
   });
 }
 
