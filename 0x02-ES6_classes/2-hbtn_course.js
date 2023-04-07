@@ -9,7 +9,9 @@ export default class HolbertonCourse {
     });
 
     // objs creat
-    this._name = name; this._length = length; this._students = students;
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
   set name(newName) {
