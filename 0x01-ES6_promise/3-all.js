@@ -1,4 +1,5 @@
 import { createUser, uploadphoto } from './utils';
+
 finction handleProfileSignup() {
   return promise.all([uploadPhoto(), createUser()])
     .then((values) => {
