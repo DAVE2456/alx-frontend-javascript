@@ -1,24 +1,18 @@
-export default class SkyHighBuilding extends Building {
-  constructor(sqft, floors) {
-    // constructor class building
-    super(sqft);
+import Building from './5-building';
 
-    // create objects
+class SkyHighBuilding extends Building {
+  constructor(sqft, floors) {
+    super(sqft);
     this._floors = floors;
   }
 
-  // methods
+  get floors() {
+    return (this._floors);
+  }
 
   evacuationWarningMessage() {
-    return `Evacuate slowly the ${this.floors} floors`;
-  }
-
-  // Getters
-  get sqft() {
-    return this._sqft;
-  }
-
-  get floors() {
-    return this._floors;
+    return (`Evacuate slowly the ${this.floors} floors`);
   }
 }
+
+export default SkyHighBuilding;
